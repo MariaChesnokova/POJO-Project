@@ -20,7 +20,12 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  // Your code here
+  for (const obj of objArray) {
+    if (keyString in obj) {
+      return true; // If the key exists in any object, return true
+    }
+  }
+  return false; // If the key is not found in any object, return false
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
