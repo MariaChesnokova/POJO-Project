@@ -10,11 +10,7 @@ restSum(0); // => 0
 ***********************************************************************/
 
 function restSum(...otherNums) {
-  let newSum = 0;
-  otherNums.forEach(function(num){
-    newSum += num;
-  })
-  return newSum;
+  // Your code here
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

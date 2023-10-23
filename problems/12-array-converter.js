@@ -12,24 +12,8 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 ***********************************************************************/
 
 function arrayConverter(array) {
-  // Initialize an empty object to store the counts.
-  const counts = {};
-
-  // Loop through the array and count the occurrences of each value.
-  for (let i = 0; i < array.length; i++) {
-    const item = array[i];
-
-    // Check if the item is already in the counts object.
-    if (counts[item] === undefined) {
-      // If not, initialize the count to 1.
-      counts[item] = 1;
-    } else {
-      // If it's already in the counts object, increment the count.
-      counts[item]++;
-    }
-  }
-
-  return counts;
+  // Your code here
 }
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = arrayConverter;

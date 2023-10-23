@@ -28,24 +28,7 @@ console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 ***********************************************************************/
 
 function countScores(people) {
-  const scoreCount = {}; // Initialize an empty object to store the scores.
-
-  for (let i = 0; i < people.length; i++) {
-    const person = people[i];
-    const name = person.name;
-    const score = person.score;
-
-    // Check if the person's name is already in the scoreCount object.
-    if (scoreCount[name] === undefined) {
-      // If not, initialize the score to the current score value.
-      scoreCount[name] = score;
-    } else {
-      // If the person's name is already in the object, add the current score to their existing score.
-      scoreCount[name] += score;
-    }
-  }
-
-  return scoreCount;
+  // Your code here
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
