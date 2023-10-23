@@ -11,7 +11,10 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
 function valuePair(obj1, obj2, key) {
-  // Your code here
+  if (key in obj1 && key in obj2) {
+    return [obj1[key], obj2[key]];
+  }
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

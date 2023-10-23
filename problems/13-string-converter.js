@@ -12,7 +12,26 @@ console.log(stringConverter("raccoon")); // => {r: 1, a: 1, c: 2, o: 2, n: 1}
 ***********************************************************************/
 
 function stringConverter(string) {
-  // Your code here
+  {
+    // Initialize an empty object to store the counts.
+    const counts = {};
+
+    // Loop through the array and count the occurrences of each value.
+    for (let i = 0; i < string.length; i++) {
+      const char = string[i];
+
+      // Check if the item is already in the counts object.
+      if (counts[char] === undefined) {
+        // If not, initialize the count to 1.
+        counts[char] = 1;
+      } else {
+        // If it's already in the counts object, increment the count.
+        counts[char]++;
+      }
+    }
+
+    return counts;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
